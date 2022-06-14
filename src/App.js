@@ -10,46 +10,56 @@ import Checkout from './pages/Shop/Checkout';
 import SingleProductView from './pages/Shop/SingleProductView';
 import NotFound from './pages/NotFound';
 
-import products from './assets/products.json';
+import initializeProducts from './helpers/initializeProducts';
 
 import './styles.css';
 
 function App() {
 	const [basket, setBasket] = useState([]);
-	const productList = products.products;
+	const productList = initializeProducts();
 
 	return (
 		<BrowserRouter>
 			<Header totalItems={basket.length} />
-			<Routes>
-				<Route path='/' element={<Home title='Home' />} />
-				<Route path='about' element={<About title='About' />} />
-				<Route path='shop' element={<Shop title='Shop' />}>
+			<main>
+				<Routes>
+					<Route path='/' element={<Home title='Home' />} />
+					<Route path='about' element={<About title='About' />} />
+					<Route path='shop' element={<Shop title='Shop' />}>
+						<Route
+							index
+							element={
+								<Storefront
+									products={productList}
+									title='Shop'
+								/>
+							}
+						/>
+						<Route
+							path='basket'
+							element={<Basket title='Basket' />}
+						/>
+						<Route
+							path='checkout'
+							element={<Checkout title='Checkout' />}
+						/>
+						<Route
+							path='checkout'
+							element={<Checkout title='Checkout' />}
+						/>
+						<Route
+							path=':productId'
+							element={
+								<SingleProductView products={productList} />
+							}
+						/>
+					</Route>
 					<Route
-						index
-						element={
-							<Storefront products={productList} title='Shop' />
-						}
+						path='*'
+						element={<NotFound title='404 - Not Found' />}
 					/>
-					<Route path='basket' element={<Basket title='Basket' />} />
-					<Route
-						path='checkout'
-						element={<Checkout title='Checkout' />}
-					/>
-					<Route
-						path='checkout'
-						element={<Checkout title='Checkout' />}
-					/>
-					<Route
-						path=':productId'
-						element={<SingleProductView products={productList} />}
-					/>
-				</Route>
-				<Route
-					path='*'
-					element={<NotFound title='404 - Not Found' />}
-				/>
-			</Routes>
+				</Routes>
+			</main>
 		</BrowserRouter>
 	);
 }
