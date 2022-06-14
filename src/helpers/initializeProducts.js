@@ -3,10 +3,11 @@ import imageGallery from './imageGallery';
 
 function initializeProducts() {
 	let gallery = imageGallery();
+	console.log(gallery);
 
-	let productList = products.products.map((product) => ({
+	let productList = products.products.map((product, index) => ({
 		...product,
-		image: gallery[0],
+		image: gallery[`${index + 1}.png`],
 	}));
 
 	return productList;

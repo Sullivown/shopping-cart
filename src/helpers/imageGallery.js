@@ -1,7 +1,16 @@
-import image1 from '../assets/images/product-images/1.png';
+function importAll(r) {
+	let images = {};
+	r.keys().map((item) => {
+		images[item.replace('./', '')] = r(item);
+	});
+	return images;
+}
 
 function imageGallery() {
-	return [image1];
+	const images = importAll(
+		require.context('../assets/images/product-images', false, /.png/)
+	);
+	return images;
 }
 
 export default imageGallery;
