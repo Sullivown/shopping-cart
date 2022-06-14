@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import updateDocumentTitle from '../helpers/updateDocumentTitle';
 
-function About() {
+function About(props) {
+	useEffect(() => {
+		updateDocumentTitle(props.title);
+	});
+
 	return (
 		<div>
 			<h2>About Us</h2>

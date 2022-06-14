@@ -3,3 +3,57 @@
 * {
 	box-sizing: border-box;
 }
+body {
+	margin: 0px;
+	font-family: sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: antiquewhite;
+}
+
+.site-title-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+}
+
+.site-title-div > * {
+	text-decoration: none;
+}
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 25px;
+}
+
+nav li,
+nav a {
+	list-style-type: none;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+.cart-container a {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 5px;
+}
+
+.cart-img {
+	height: 40px;
+}

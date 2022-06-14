@@ -1,0 +1,7 @@
+{
+	"products": [
+		{ "id": 1, "title": "Platemail Gloves" },
+		{ "id": 2, "title": "Platemail Chest" },
+		{ "id": 3, "title": "Platemail Boots" }
+	]
+}

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import updateDocumentTitle from '../helpers/updateDocumentTitle';
 
 function Home(props) {
+	useEffect(() => {
+		updateDocumentTitle(props.title);
+	});
+
 	return (
 		<div className='home'>
 			<div>
