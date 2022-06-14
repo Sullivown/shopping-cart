@@ -7,6 +7,8 @@ import Shop from './pages/Shop/Shop';
 import Storefront from './pages/Shop/Storefront';
 import Basket from './pages/Shop/Basket';
 import Checkout from './pages/Shop/Checkout';
+import SingleProductView from './pages/Shop/SingleProductView';
+import NotFound from './pages/NotFound';
 
 import products from './assets/products.json';
 
@@ -34,7 +36,19 @@ function App() {
 						path='checkout'
 						element={<Checkout title='Checkout' />}
 					/>
+					<Route
+						path='checkout'
+						element={<Checkout title='Checkout' />}
+					/>
+					<Route
+						path=':productId'
+						element={<SingleProductView products={productList} />}
+					/>
 				</Route>
+				<Route
+					path='*'
+					element={<NotFound title='404 - Not Found' />}
+				/>
 			</Routes>
 		</BrowserRouter>
 	);

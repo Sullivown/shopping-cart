@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import updateDocumentTitle from '../../helpers/updateDocumentTitle';
+import ProductPreview from '../../components/ProductPreview';
 
 function Storefront(props) {
 	useEffect(() => {
@@ -7,7 +8,7 @@ function Storefront(props) {
 	});
 
 	const productElements = props.products.map((product) => (
-		<div>{product.title}</div>
+		<ProductPreview product={product} />
 	));
 
 	return (
