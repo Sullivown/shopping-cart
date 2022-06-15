@@ -8,7 +8,11 @@ function Storefront(props) {
 	});
 
 	const productElements = props.products.map((product) => (
-		<ProductPreview product={product} />
+		<ProductPreview
+			key={product.id}
+			product={product}
+			addToCart={props.addToCart}
+		/>
 	));
 
 	return (

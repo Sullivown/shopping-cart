@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shop/Shop';
 import Storefront from './pages/Shop/Storefront';
-import Basket from './pages/Shop/Basket';
+import Cart from './pages/Shop/Cart';
 import Checkout from './pages/Shop/Checkout';
 import SingleProductView from './pages/Shop/SingleProductView';
 import NotFound from './pages/NotFound';
@@ -15,12 +15,19 @@ import initializeProducts from './helpers/initializeProducts';
 import './styles.css';
 
 function App() {
-	const [basket, setBasket] = useState([]);
+	const [cart, setCart] = useState([]);
 	const productList = initializeProducts();
+
+	function addToCart(item, quantity) {
+		setCart((prevCart) => [
+			...prevCart,
+			{ item: item, quantity: quantity ? quantity : 1 },
+		]);
+	}
 
 	return (
 		<BrowserRouter>
-			<Header totalItems={basket.length} />
+			<Header totalItems={cart.length} />
 			<main>
 				<Routes>
 					<Route path='/' element={<Home title='Home' />} />
@@ -32,12 +39,13 @@ function App() {
 								<Storefront
 									products={productList}
 									title='Shop'
+									addToCart={addToCart}
 								/>
 							}
 						/>
 						<Route
-							path='basket'
-							element={<Basket title='Basket' />}
+							path='cart'
+							element={<Cart title='Cart' cart={cart} />}
 						/>
 						<Route
 							path='checkout'

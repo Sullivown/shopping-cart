@@ -3,7 +3,6 @@ import imageGallery from './imageGallery';
 
 function initializeProducts() {
 	let gallery = imageGallery();
-	console.log(gallery);
 
 	let productList = products.products.map((product, index) => ({
 		...product,

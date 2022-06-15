@@ -3,9 +3,14 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0px;
 	font-family: sans-serif;
+}
+
+#root {
+	width: 100%;
 }
 
 header {
@@ -15,6 +20,14 @@ header {
 	align-items: center;
 	padding: 20px;
 	background-color: antiquewhite;
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 1.2rem;
+	padding: 5px;
+	font-family: sans-serif;
 }
 
 .site-title-div {
@@ -87,7 +100,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	gap: 15px;
-	border: 1px solid lightgrey;
+	border: 1px solid black;
 	border-radius: 5px;
 	text-align: center;
 }
@@ -102,10 +115,42 @@ main {
 
 .product-preview > button {
 	width: 100%;
-	padding: 5px;
-	font-family: sans-serif;
 }
 
 .product-preview > button:hover {
 	cursor: pointer;
+}
+
+.cart {
+	width: 100%;
+}
+
+.cart-details {
+	display: flex;
+	gap: 15px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.cart-products-list {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	flex: 0;
+}
+
+.cart-product-preview {
+	display: grid;
+	gap: 25px;
+	grid-template-columns: 100px 2fr 100px 1fr;
+	align-items: center;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 25px;
+}
+
+.cart-summary {
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 25px;
 }

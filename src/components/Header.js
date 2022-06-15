@@ -24,7 +24,7 @@ function Header(props) {
 					</li>
 
 					<li className='cart-container'>
-						<Link to='shop/basket'>
+						<Link to='shop/cart'>
 							<img
 								className='cart-img'
 								src={cartImg}
