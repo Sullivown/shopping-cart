@@ -3,6 +3,7 @@ import updateDocumentTitle from '../../helpers/updateDocumentTitle';
 import CartProductPreview from '../../components/CartProductPreview';
 
 function Cart(props) {
+	console.log(props.cart);
 	useEffect(() => {
 		updateDocumentTitle(props.title);
 	});

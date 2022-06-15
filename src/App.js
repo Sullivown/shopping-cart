@@ -18,11 +18,25 @@ function App() {
 	const [cart, setCart] = useState([]);
 	const productList = initializeProducts();
 
-	function addToCart(item, quantity) {
-		setCart((prevCart) => [
-			...prevCart,
-			{ item: item, quantity: quantity ? quantity : 1 },
-		]);
+	function addToCart(item, quantity = 1) {
+		setCart((prevCart) => {
+			const existingItem = prevCart.find(
+				(cartItem) => cartItem.item.id === item.id
+			);
+
+			if (existingItem) {
+				return prevCart.map((cartItem) =>
+					cartItem.item.id === item.id
+						? {
+								...cartItem,
+								quantity: cartItem.quantity + quantity,
+						  }
+						: cartItem
+				);
+			} else {
+				return [...prevCart, { item: item, quantity: quantity }];
+			}
+		});
 	}
 
 	return (

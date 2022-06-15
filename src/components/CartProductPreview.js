@@ -6,7 +6,11 @@ function CartProductPreview(props) {
 		<section className='cart-product-preview'>
 			<img src={props.product.image} alt={props.product.title} />
 			<h3>{props.product.title}</h3>
-			<input type='number' value={props.quantity}></input>
+			<input
+				type='number'
+				value={props.quantity}
+				onChange={() => true}
+			></input>
 			<div>{priceFormatter(props.product.price * props.quantity)}</div>
 		</section>
 	);
