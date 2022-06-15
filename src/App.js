@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './pages/Home';
@@ -16,7 +16,22 @@ import './styles.css';
 
 function App() {
 	const [cart, setCart] = useState([]);
+	const [totalItems, setTotalItems] = useState(0);
+
 	const productList = initializeProducts();
+
+	useEffect(() => {
+		function getTotalItems() {
+			const total = cart.reduce((total, current) => {
+				total += current.quantity;
+				return total;
+			}, 0);
+			console.log(total);
+			return total;
+		}
+
+		setTotalItems(getTotalItems());
+	}, [cart]);
 
 	function addToCart(item, quantity) {
 		setCart((prevCart) => {
@@ -43,7 +58,7 @@ function App() {
 
 	return (
 		<BrowserRouter>
-			<Header totalItems={cart.length} />
+			<Header totalItems={totalItems} />
 			<main>
 				<Routes>
 					<Route path='/' element={<Home title='Home' />} />
