@@ -12,9 +12,13 @@ function Storefront(props) {
 	));
 
 	return (
-		<div>
-			<h2>Storefront</h2>
-			<div>{productElements}</div>
+		<div className='storefront'>
+			<div className='page-title-div'>
+				<h2>Shop</h2>
+				<span>Displaying {props.products.length} items</span>
+			</div>
+
+			<div className='product-preview-container'>{productElements}</div>
 		</div>
 	);
 }

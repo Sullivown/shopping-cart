@@ -5,8 +5,14 @@ function ProductPreview(props) {
 	let navigate = useNavigate();
 	return (
 		<section className='product-preview'>
-			<img src={props.product.image} alt={props.product.title} />
-			<h3>{props.product.title}</h3>
+			<img
+				src={props.product.image}
+				alt={props.product.title}
+				onClick={() => navigate(`/shop/${props.product.id}`)}
+			/>
+			<h3 onClick={() => navigate(`/shop/${props.product.id}`)}>
+				{props.product.title}
+			</h3>
 			<button
 				type='button'
 				onClick={() => navigate(`/shop/${props.product.id}`)}

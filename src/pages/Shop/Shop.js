@@ -8,9 +8,9 @@ function Shop(props) {
 	});
 
 	return (
-		<div>
+		<>
 			<Outlet />
-		</div>
+		</>
 	);
 }
 

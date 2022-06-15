@@ -59,5 +59,53 @@ nav a:hover {
 }
 
 main {
+	display: flex;
 	padding: 20px;
+}
+
+.page-title-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.storefront {
+	width: 100%;
+}
+
+.product-preview-container {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
+.product-preview {
+	display: flex;
+	padding: 15px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.product-preview > img {
+	max-width: 100px;
+}
+
+.product-preview > img:hover {
+	cursor: pointer;
+}
+
+.product-preview > button {
+	width: 100%;
+	padding: 5px;
+	font-family: sans-serif;
+}
+
+.product-preview > button:hover {
+	cursor: pointer;
 }
