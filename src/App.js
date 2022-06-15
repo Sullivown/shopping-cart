@@ -26,7 +26,6 @@ function App() {
 				total += current.quantity;
 				return total;
 			}, 0);
-			console.log(total);
 			return total;
 		}
 
