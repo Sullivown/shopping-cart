@@ -38,6 +38,14 @@ function App() {
 				(cartItem) => cartItem.item.id === item.id
 			);
 
+			if (quantity === 0) {
+				const temp = prevCart.filter(
+					(prevItem) => prevItem.item.id !== item.id
+				);
+				console.log(temp);
+				return temp;
+			}
+
 			if (existingItem) {
 				return prevCart.map((cartItem) =>
 					cartItem.item.id === item.id

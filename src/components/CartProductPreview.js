@@ -17,7 +17,7 @@ function CartProductPreview(props) {
 				type='number'
 				min='0'
 				value={quantity}
-				onChange={(e) => setQuantity(e.target.value)}
+				onChange={(e) => setQuantity(e.target.value || 0)}
 				onBlur={(e) =>
 					props.addToCart(props.product, parseInt(quantity))
 				}

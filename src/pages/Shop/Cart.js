@@ -14,9 +14,9 @@ function Cart(props) {
 		updateDocumentTitle(props.title);
 	});
 
-	const cartProductElements = props.cart.map((item, index) => (
+	const cartProductElements = props.cart.map((item) => (
 		<CartProductPreview
-			key={index}
+			key={item.item.id}
 			product={item.item}
 			quantity={item.quantity}
 			addToCart={props.addToCart}
