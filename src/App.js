@@ -18,7 +18,7 @@ function App() {
 	const [cart, setCart] = useState([]);
 	const productList = initializeProducts();
 
-	function addToCart(item, quantity = 1) {
+	function addToCart(item, quantity) {
 		setCart((prevCart) => {
 			const existingItem = prevCart.find(
 				(cartItem) => cartItem.item.id === item.id
@@ -29,12 +29,14 @@ function App() {
 					cartItem.item.id === item.id
 						? {
 								...cartItem,
-								quantity: cartItem.quantity + quantity,
+								quantity: quantity
+									? quantity
+									: cartItem.quantity + 1,
 						  }
 						: cartItem
 				);
 			} else {
-				return [...prevCart, { item: item, quantity: quantity }];
+				return [...prevCart, { item: item, quantity: 1 }];
 			}
 		});
 	}
@@ -59,7 +61,13 @@ function App() {
 						/>
 						<Route
 							path='cart'
-							element={<Cart title='Cart' cart={cart} />}
+							element={
+								<Cart
+									title='Cart'
+									cart={cart}
+									addToCart={addToCart}
+								/>
+							}
 						/>
 						<Route
 							path='checkout'
