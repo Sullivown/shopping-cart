@@ -9,7 +9,7 @@ function SingleProductView(props) {
 	);
 
 	return product ? (
-		<div className='single-product-view'>
+		<div className='page-content single-product-view'>
 			<h2>{product.title}</h2>
 			<img src={product.image} alt={product.title} />
 			<p>

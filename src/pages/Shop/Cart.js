@@ -24,10 +24,23 @@ function Cart(props) {
 	));
 
 	return (
-		<div className='cart'>
+		<div className='page-content cart'>
 			<h2>Cart</h2>
 			<div className='cart-details'>
-				<div className='cart-products-list'>{cartProductElements}</div>
+				<div className='cart-products-list'>
+					<div className='cart-products-header'>
+						<div>Item</div>
+						<div>Quanitity</div>
+						<div>Total</div>
+					</div>
+					{props.cart.length > 0 ? (
+						cartProductElements
+					) : (
+						<section className='cart-product-preview--empty'>
+							Your cart is empty!
+						</section>
+					)}
+				</div>
 				<div className='cart-summary'>
 					<h3>Cart Total</h3>
 					<p>{cartTotal}</p>

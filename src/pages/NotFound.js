@@ -7,7 +7,7 @@ function NotFound(props) {
 	});
 
 	return (
-		<div className='not-found'>
+		<div className='page-content not-found'>
 			<h2>404 - page not found!</h2>
 		</div>
 	);

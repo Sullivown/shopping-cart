@@ -39,11 +39,9 @@ function App() {
 			);
 
 			if (quantity === 0) {
-				const temp = prevCart.filter(
+				return prevCart.filter(
 					(prevItem) => prevItem.item.id !== item.id
 				);
-				console.log(temp);
-				return temp;
 			}
 
 			if (existingItem) {
@@ -68,7 +66,10 @@ function App() {
 			<Header totalItems={totalItems} />
 			<main>
 				<Routes>
-					<Route path='/' element={<Home title='Home' />} />
+					<Route
+						path='/'
+						element={<Home title='Home' products={productList} />}
+					/>
 					<Route path='about' element={<About title='About' />} />
 					<Route path='shop' element={<Shop title='Shop' />}>
 						<Route

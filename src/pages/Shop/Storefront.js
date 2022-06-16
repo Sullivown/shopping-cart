@@ -16,7 +16,7 @@ function Storefront(props) {
 	));
 
 	return (
-		<div className='storefront'>
+		<div className='page-content storefront'>
 			<div className='page-title-div'>
 				<h2>Shop</h2>
 				<span>Displaying {props.products.length} items</span>

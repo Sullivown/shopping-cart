@@ -7,7 +7,7 @@ function About(props) {
 	});
 
 	return (
-		<div className='about'>
+		<div className='page-content about'>
 			<h2>About Us</h2>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse at
