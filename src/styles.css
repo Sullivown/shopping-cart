@@ -1,4 +1,15 @@
 @import-normalize;
+@font-face {
+	font-family: 'Fascinate';
+	src: local('Fascinate'),
+		url(./assets/fonts/Fascinate-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'),
+		url(./assets/fonts/RobotoMono-VariableFont_wght.ttf) format('truetype');
+}
 
 * {
 	box-sizing: border-box;
@@ -8,7 +19,7 @@ body {
 	position: absolute;
 	margin: 0px;
 	width: 100%;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 #root {
@@ -31,7 +42,7 @@ button {
 	border-radius: 5px;
 	font-size: 1.2rem;
 	padding: 5px;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 button:hover {
@@ -43,10 +54,13 @@ button:hover {
 	justify-content: space-between;
 	align-items: center;
 	gap: 25px;
+	font-family: 'Fascinate', sans-serif;
+	font-size: 1.5rem;
 }
 
 .site-title-div > * {
 	text-decoration: none;
+	color: red;
 }
 
 nav ul {
@@ -145,6 +159,7 @@ main {
 .cart-products-list {
 	display: flex;
 	width: 80%;
+	min-width: 250px;
 	flex-direction: column;
 	gap: 15px;
 }
@@ -175,7 +190,7 @@ main {
 	border: 1px solid lightgray;
 	border-radius: 5px;
 	padding: 25px;
-	min-width: 600px;
+	min-width: 500px;
 }
 
 .cart-product-preview > div:last-child {
@@ -219,16 +234,18 @@ main {
 }
 
 .hero-text {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	background-color: rgba(0, 0, 0, 0.538);
 	color: white;
-	padding: 50px;
+	padding: 2rem;
 	border-radius: 5px;
 	text-align: center;
+	margin: 0px 50px;
 }
 
 .hero-text > h2 {
 	font-size: 4rem;
+	font-family: 'Fascinate', sans-serif;
 }
 
 .home-section {
@@ -248,8 +265,32 @@ main {
 	margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
 	header {
 		justify-content: center;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	.hero-text > h2 {
+		font-size: 2rem;
+	}
+
+	.cart-product-preview {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+		align-items: center;
+		border: 1px solid lightgray;
+		border-radius: 5px;
+		min-width: 250px;
+	}
+
+	.cart-product-preview--empty {
+		min-width: 250px;
 	}
 }
