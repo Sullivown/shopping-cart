@@ -33,7 +33,7 @@ function App() {
 		setTotalItems(getTotalItems());
 	}, [cart]);
 
-	function addToCart(item, quantity) {
+	function addToCart(item, quantity, edit) {
 		setCart((prevCart) => {
 			const existingItem = prevCart.find(
 				(cartItem) => cartItem.item.id === item.id
@@ -50,13 +50,14 @@ function App() {
 					cartItem.item.id === item.id
 						? {
 								...cartItem,
-								quantity: quantity
+								quantity: edit
 									? quantity
-									: cartItem.quantity + 1,
+									: cartItem.quantity + (quantity || 1),
 						  }
 						: cartItem
 				);
 			} else {
+				console.log('got to the else');
 				return [...prevCart, { item: item, quantity: 1 }];
 			}
 		});
@@ -104,7 +105,10 @@ function App() {
 						<Route
 							path=':productId'
 							element={
-								<SingleProductView products={productList} />
+								<SingleProductView
+									products={productList}
+									addToCart={addToCart}
+								/>
 							}
 						/>
 					</Route>

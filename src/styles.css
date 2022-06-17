@@ -39,19 +39,26 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	background-color: antiquewhite;
+	background-color: #ffffff;
+	border-bottom: 1px solid black;
 }
 
 button {
-	border: 1px solid black;
+	border: 1px solid #e05b49;
 	border-radius: 5px;
 	font-size: 1.2rem;
-	padding: 5px;
+	padding: 10px;
 	font-family: 'Roboto', sans-serif;
+	background-color: #ffe909;
+	transition: 100ms ease-in-out;
 }
 
 button:hover {
 	cursor: pointer;
+}
+
+button:active {
+	box-shadow: inset 0px 0px 15px #c1c1c1;
 }
 
 .site-title-div {
@@ -65,7 +72,20 @@ button:hover {
 
 .site-title-div > * {
 	text-decoration: none;
-	color: red;
+	text-shadow: rgb(224, 91, 73) 2px 0px 0px,
+		rgb(224, 91, 73) 1.75517px 0.958851px 0px,
+		rgb(224, 91, 73) 1.0806px 1.68294px 0px,
+		rgb(224, 91, 73) 0.141474px 1.99499px 0px,
+		rgb(224, 91, 73) -0.832294px 1.81859px 0px,
+		rgb(224, 91, 73) -1.60229px 1.19694px 0px,
+		rgb(224, 91, 73) -1.97998px 0.28224px 0px,
+		rgb(224, 91, 73) -1.87291px -0.701566px 0px,
+		rgb(224, 91, 73) -1.30729px -1.5136px 0px,
+		rgb(224, 91, 73) -0.421592px -1.95506px 0px,
+		rgb(224, 91, 73) 0.567324px -1.91785px 0px,
+		rgb(224, 91, 73) 1.41734px -1.41108px 0px,
+		rgb(224, 91, 73) 1.92034px -0.558831px 0px;
+	color: #ffe909;
 }
 
 nav ul {
@@ -81,6 +101,20 @@ nav a {
 	text-decoration: none;
 	font-size: 1.1rem;
 	font-weight: 600;
+	text-shadow: rgb(224, 91, 73) 2px 0px 0px,
+		rgb(224, 91, 73) 1.75517px 0.958851px 0px,
+		rgb(224, 91, 73) 1.0806px 1.68294px 0px,
+		rgb(224, 91, 73) 0.141474px 1.99499px 0px,
+		rgb(224, 91, 73) -0.832294px 1.81859px 0px,
+		rgb(224, 91, 73) -1.60229px 1.19694px 0px,
+		rgb(224, 91, 73) -1.97998px 0.28224px 0px,
+		rgb(224, 91, 73) -1.87291px -0.701566px 0px,
+		rgb(224, 91, 73) -1.30729px -1.5136px 0px,
+		rgb(224, 91, 73) -0.421592px -1.95506px 0px,
+		rgb(224, 91, 73) 0.567324px -1.91785px 0px,
+		rgb(224, 91, 73) 1.41734px -1.41108px 0px,
+		rgb(224, 91, 73) 1.92034px -0.558831px 0px;
+	color: #ffe909;
 }
 
 nav a:hover {
@@ -109,14 +143,40 @@ footer {
 	align-items: center;
 	padding: 50px;
 	margin-top: auto;
+	background-color: black;
+	color: white;
 }
 
-h2 {
+footer a {
+	color: white;
+}
+
+h2,
+h3 {
 	font-size: 3rem;
+	text-shadow: rgb(224, 91, 73) 2px 0px 0px,
+		rgb(224, 91, 73) 1.75517px 0.958851px 0px,
+		rgb(224, 91, 73) 1.0806px 1.68294px 0px,
+		rgb(224, 91, 73) 0.141474px 1.99499px 0px,
+		rgb(224, 91, 73) -0.832294px 1.81859px 0px,
+		rgb(224, 91, 73) -1.60229px 1.19694px 0px,
+		rgb(224, 91, 73) -1.97998px 0.28224px 0px,
+		rgb(224, 91, 73) -1.87291px -0.701566px 0px,
+		rgb(224, 91, 73) -1.30729px -1.5136px 0px,
+		rgb(224, 91, 73) -0.421592px -1.95506px 0px,
+		rgb(224, 91, 73) 0.567324px -1.91785px 0px,
+		rgb(224, 91, 73) 1.41734px -1.41108px 0px,
+		rgb(224, 91, 73) 1.92034px -0.558831px 0px;
+	color: #ffe909;
+}
+
+h3 {
+	font-size: 1.5rem;
 }
 
 .page-content {
 	padding: 50px;
+	min-height: 50vh;
 }
 
 .page-title-div {
@@ -159,6 +219,9 @@ h2 {
 
 .product-preview > button {
 	width: 100%;
+}
+.product-preview > p:first-of-type {
+	margin-top: auto;
 }
 
 .cart {
@@ -209,6 +272,11 @@ h2 {
 	border-radius: 5px;
 	padding: 25px;
 	min-width: 500px;
+}
+
+.cart-product-preview > h3:hover,
+.cart-product-preview > img:hover {
+	cursor: pointer;
 }
 
 .cart-product-preview > div:last-child {
@@ -303,9 +371,60 @@ h2 {
 }
 
 .about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
-	gap: 25px;
+	gap: 50px;
 }
+
+.about > img {
+	width: 100px;
+}
+
+.not-found {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.single-product-view {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.single-product-view img {
+	width: 100px;
+}
+
+.single-product-view--details {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 25px;
+	justify-content: center;
+}
+
+.single-product-view--description {
+	max-width: 800px;
+}
+
+.single-product-view--controls {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-height: 400px;
+	align-items: center;
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	padding: 25px;
+	min-width: 250px;
+	justify-self: flex-end;
+}
+
 @media only screen and (max-width: 800px) {
 	header {
 		justify-content: center;
