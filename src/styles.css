@@ -313,15 +313,16 @@ h3 {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 50vh;
-	background-image: url('./assets/images/hero.jpg');
+	height: 70vh;
+	background-image: url('./assets/images/hero-coins.jpg');
 	background-size: cover;
+	background-position: center;
 	position: relative;
 }
 
 .hero-text {
 	font-size: 1rem;
-	background-color: rgba(0, 0, 0, 0.538);
+	background-color: rgba(0, 0, 0, 0.801);
 	color: white;
 	padding: 2rem;
 	border-radius: 5px;
