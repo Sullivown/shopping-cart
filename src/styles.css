@@ -20,11 +20,16 @@ body {
 	margin: 0px;
 	width: 100%;
 	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100vh;
 }
 
 #root {
 	width: 100%;
 	margin: 0px;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 header {
@@ -98,8 +103,20 @@ main {
 	flex-direction: column;
 }
 
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 50px;
+	margin-top: auto;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
 .page-content {
-	padding: 25px;
+	padding: 50px;
 }
 
 .page-title-div {
@@ -117,6 +134,7 @@ main {
 	display: grid;
 	gap: 10px;
 	grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+	width: 100%;
 }
 
 .product-preview {
@@ -253,11 +271,8 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 150px 0px;
-}
-
-.popular-items {
-	margin: 150px 0px;
+	padding: 150px;
+	width: 100%;
 }
 
 .popular-items > h2 {
@@ -265,6 +280,32 @@ main {
 	margin-bottom: 50px;
 }
 
+.light-bg {
+	background-color: #ffffff !important;
+}
+
+.dark-bg {
+	background-color: #f1f1f4 !important;
+}
+
+.intro {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	gap: 50px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.intro-section {
+	max-width: 300px;
+}
+
+.about {
+	text-align: center;
+	gap: 25px;
+}
 @media only screen and (max-width: 800px) {
 	header {
 		justify-content: center;
