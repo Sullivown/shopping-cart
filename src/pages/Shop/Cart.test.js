@@ -76,19 +76,20 @@ describe('Cart component tests', () => {
 	});
 
 	it('calls addToCart correctly when qty edited and submitted', () => {
-		const testCart = [mockCart[0]];
 		render(
 			<Router>
-				<Cart title='Cart' cart={testCart} addToCart={addToCartMock} />
+				<Cart title='Cart' cart={mockCart} addToCart={addToCartMock} />
 			</Router>
 		);
 
-		const qtyInput = screen.getByRole('spinbutton', { type: 'number' });
+		const qtyInput = screen.getAllByRole('spinbutton', {
+			type: 'number',
+		})[0];
 
 		userEvent.clear(qtyInput);
 		userEvent.type(qtyInput, '0{Enter}');
 
 		expect(qtyInput.value).toBe('0');
-		expect(addToCartMock).toBeCalledWith(testCart[0].item, 0, true);
+		expect(addToCartMock).toBeCalledWith(mockCart[0].item, 0, true);
 	});
 });
