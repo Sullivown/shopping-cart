@@ -63,7 +63,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter basename='/'>
+		<BrowserRouter basename='/shopping-cart'>
 			<Header totalItems={totalItems} />
 			<main>
 				<Routes>
