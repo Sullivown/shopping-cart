@@ -63,7 +63,7 @@ function App() {
 	}
 
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename='/'>
 			<Header totalItems={totalItems} />
 			<main>
 				<Routes>
