@@ -2,6 +2,8 @@
 
 Shopping cart app. Made as part of [The Odin project](https://www.theodinproject.com/).
 
+[View it live.](https://sullivown.github.io/shopping-cart/)
+
 ## Learning Objectives
 
 -   Gain familiarity with [react-router-dom](https://www.npmjs.com/package/react-router-dom)
