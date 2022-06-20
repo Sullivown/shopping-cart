@@ -362,8 +362,8 @@ h3 {
 	flex-wrap: wrap;
 	flex-direction: row;
 	text-align: center;
-	gap: 50px;
-	justify-content: space-between;
+	gap: 100px;
+	justify-content: center;
 	align-items: center;
 }
 
@@ -430,6 +430,14 @@ h3 {
 	header {
 		justify-content: center;
 	}
+
+	.page-content {
+		padding: 25px;
+	}
+
+	.home-section {
+		padding: 25px;
+	}
 }
 
 @media only screen and (max-width: 650px) {
@@ -453,5 +461,21 @@ h3 {
 
 	.cart-product-preview--empty {
 		min-width: 250px;
+	}
+
+	.page-content {
+		padding: 2rem;
+	}
+	.page-content > h2,
+	.page-content h3 {
+		text-align: center;
+	}
+
+	.home-section {
+		padding: 2rem !important;
+	}
+
+	.page-title-div > span {
+		font-size: 0.7rem;
 	}
 }
