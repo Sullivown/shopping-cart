@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Footer component renders 1`] = `
+<footer>
+  <div>
+    Icons by 
+    <a
+      href="https://icons8.com"
+    >
+      Icons8
+    </a>
+  </div>
+  <div>
+    AdventureMart ©
+  </div>
+</footer>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test NotFound component renders 1`] = `
+<div
+  className="page-content not-found"
+>
+  <img
+    alt="Sad cloud"
+    src="sad-cloud.png"
+  />
+  <h2>
+    404 - page not found!
+  </h2>
+</div>
+`;

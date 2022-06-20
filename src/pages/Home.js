@@ -52,7 +52,10 @@ function Home(props) {
 				</div>
 				<div className='home-section light-bg popular-items'>
 					<h2>Popular Items</h2>
-					<div className='product-preview-container'>
+					<div
+						className='product-preview-container'
+						data-testid='product-preview-container'
+					>
 						{productElements}
 					</div>
 				</div>
