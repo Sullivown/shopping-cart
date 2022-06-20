@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ProductPreview Component renders correctly 1`] = `
+<section
+  className="product-preview"
+>
+  <img
+    alt="3D Glasses"
+    onClick={[Function]}
+    src={
+      Object {
+        "advanceTimersByTime": [Function],
+        "advanceTimersToNextTimer": [Function],
+        "autoMockOff": [Function],
+        "autoMockOn": [Function],
+        "clearAllMocks": [Function],
+        "clearAllTimers": [Function],
+        "createMockFromModule": [Function],
+        "deepUnmock": [Function],
+        "disableAutomock": [Function],
+        "doMock": [Function],
+        "dontMock": [Function],
+        "enableAutomock": [Function],
+        "fn": [Function],
+        "genMockFromModule": [Function],
+        "getRealSystemTime": [Function],
+        "getTimerCount": [Function],
+        "isMockFunction": [Function],
+        "isolateModules": [Function],
+        "mock": [Function],
+        "mocked": [Function],
+        "requireActual": [Function],
+        "requireMock": [Function],
+        "resetAllMocks": [Function],
+        "resetModules": [Function],
+        "restoreAllMocks": [Function],
+        "retryTimes": [Function],
+        "runAllImmediates": [Function],
+        "runAllTicks": [Function],
+        "runAllTimers": [Function],
+        "runOnlyPendingTimers": [Function],
+        "setMock": [Function],
+        "setSystemTime": [Function],
+        "setTimeout": [Function],
+        "spyOn": [Function],
+        "unmock": [Function],
+        "unstable_mockModule": [Function],
+        "useFakeTimers": [Function],
+        "useRealTimers": [Function],
+      }
+    }
+  />
+  <h3
+    onClick={[Function]}
+  >
+    3D Glasses
+  </h3>
+  <p>
+    £2.99
+  </p>
+  <button
+    onClick={[Function]}
+    type="button"
+  >
+    View Item
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    Add to Cart
+  </button>
+</section>
+`;

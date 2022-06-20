@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart component tests renders 1`] = `
+<div
+  className="page-content cart"
+>
+  <h2>
+    Cart
+  </h2>
+  <div
+    className="cart-details"
+  >
+    <div
+      className="cart-products-list"
+      data-testid="cart-products-list"
+    >
+      <section
+        className="cart-product-preview"
+      >
+        <img
+          alt="Product 1"
+          onClick={[Function]}
+          src={
+            Object {
+              "advanceTimersByTime": [Function],
+              "advanceTimersToNextTimer": [Function],
+              "autoMockOff": [Function],
+              "autoMockOn": [Function],
+              "clearAllMocks": [Function],
+              "clearAllTimers": [Function],
+              "createMockFromModule": [Function],
+              "deepUnmock": [Function],
+              "disableAutomock": [Function],
+              "doMock": [Function],
+              "dontMock": [Function],
+              "enableAutomock": [Function],
+              "fn": [Function],
+              "genMockFromModule": [Function],
+              "getRealSystemTime": [Function],
+              "getTimerCount": [Function],
+              "isMockFunction": [Function],
+              "isolateModules": [Function],
+              "mock": [Function],
+              "mocked": [Function],
+              "requireActual": [Function],
+              "requireMock": [Function],
+              "resetAllMocks": [Function],
+              "resetModules": [Function],
+              "restoreAllMocks": [Function],
+              "retryTimes": [Function],
+              "runAllImmediates": [Function],
+              "runAllTicks": [Function],
+              "runAllTimers": [Function],
+              "runOnlyPendingTimers": [Function],
+              "setMock": [Function],
+              "setSystemTime": [Function],
+              "setTimeout": [Function],
+              "spyOn": [Function],
+              "unmock": [Function],
+              "unstable_mockModule": [Function],
+              "useFakeTimers": [Function],
+              "useRealTimers": [Function],
+            }
+          }
+        />
+        <h3
+          onClick={[Function]}
+        >
+          Product 1
+        </h3>
+        <input
+          min="0"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          type="number"
+          value={1}
+        />
+        <div>
+          £2.99
+        </div>
+      </section>
+      <section
+        className="cart-product-preview"
+      >
+        <img
+          alt="Product 2"
+          onClick={[Function]}
+          src={
+            Object {
+              "advanceTimersByTime": [Function],
+              "advanceTimersToNextTimer": [Function],
+              "autoMockOff": [Function],
+              "autoMockOn": [Function],
+              "clearAllMocks": [Function],
+              "clearAllTimers": [Function],
+              "createMockFromModule": [Function],
+              "deepUnmock": [Function],
+              "disableAutomock": [Function],
+              "doMock": [Function],
+              "dontMock": [Function],
+              "enableAutomock": [Function],
+              "fn": [Function],
+              "genMockFromModule": [Function],
+              "getRealSystemTime": [Function],
+              "getTimerCount": [Function],
+              "isMockFunction": [Function],
+              "isolateModules": [Function],
+              "mock": [Function],
+              "mocked": [Function],
+              "requireActual": [Function],
+              "requireMock": [Function],
+              "resetAllMocks": [Function],
+              "resetModules": [Function],
+              "restoreAllMocks": [Function],
+              "retryTimes": [Function],
+              "runAllImmediates": [Function],
+              "runAllTicks": [Function],
+              "runAllTimers": [Function],
+              "runOnlyPendingTimers": [Function],
+              "setMock": [Function],
+              "setSystemTime": [Function],
+              "setTimeout": [Function],
+              "spyOn": [Function],
+              "unmock": [Function],
+              "unstable_mockModule": [Function],
+              "useFakeTimers": [Function],
+              "useRealTimers": [Function],
+            }
+          }
+        />
+        <h3
+          onClick={[Function]}
+        >
+          Product 2
+        </h3>
+        <input
+          min="0"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          type="number"
+          value={2}
+        />
+        <div>
+          £20.00
+        </div>
+      </section>
+      <section
+        className="cart-product-preview"
+      >
+        <img
+          alt="Product 3"
+          onClick={[Function]}
+          src={
+            Object {
+              "advanceTimersByTime": [Function],
+              "advanceTimersToNextTimer": [Function],
+              "autoMockOff": [Function],
+              "autoMockOn": [Function],
+              "clearAllMocks": [Function],
+              "clearAllTimers": [Function],
+              "createMockFromModule": [Function],
+              "deepUnmock": [Function],
+              "disableAutomock": [Function],
+              "doMock": [Function],
+              "dontMock": [Function],
+              "enableAutomock": [Function],
+              "fn": [Function],
+              "genMockFromModule": [Function],
+              "getRealSystemTime": [Function],
+              "getTimerCount": [Function],
+              "isMockFunction": [Function],
+              "isolateModules": [Function],
+              "mock": [Function],
+              "mocked": [Function],
+              "requireActual": [Function],
+              "requireMock": [Function],
+              "resetAllMocks": [Function],
+              "resetModules": [Function],
+              "restoreAllMocks": [Function],
+              "retryTimes": [Function],
+              "runAllImmediates": [Function],
+              "runAllTicks": [Function],
+              "runAllTimers": [Function],
+              "runOnlyPendingTimers": [Function],
+              "setMock": [Function],
+              "setSystemTime": [Function],
+              "setTimeout": [Function],
+              "spyOn": [Function],
+              "unmock": [Function],
+              "unstable_mockModule": [Function],
+              "useFakeTimers": [Function],
+              "useRealTimers": [Function],
+            }
+          }
+        />
+        <h3
+          onClick={[Function]}
+        >
+          Product 3
+        </h3>
+        <input
+          min="0"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyUp={[Function]}
+          type="number"
+          value={3}
+        />
+        <div>
+          £17.97
+        </div>
+      </section>
+    </div>
+    <div
+      className="cart-summary"
+    >
+      <h3>
+        Cart Total
+      </h3>
+      <p>
+        £40.96
+      </p>
+      <button>
+        Checkout
+      </button>
+    </div>
+  </div>
+</div>
+`;

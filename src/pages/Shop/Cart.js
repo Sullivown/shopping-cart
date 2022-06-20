@@ -27,7 +27,10 @@ function Cart(props) {
 		<div className='page-content cart'>
 			<h2>Cart</h2>
 			<div className='cart-details'>
-				<div className='cart-products-list'>
+				<div
+					className='cart-products-list'
+					data-testid='cart-products-list'
+				>
 					{props.cart.length > 0 ? (
 						cartProductElements
 					) : (

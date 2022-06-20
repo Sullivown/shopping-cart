@@ -7,7 +7,6 @@ import About from './pages/About';
 import Shop from './pages/Shop/Shop';
 import Storefront from './pages/Shop/Storefront';
 import Cart from './pages/Shop/Cart';
-import Checkout from './pages/Shop/Checkout';
 import SingleProductView from './pages/Shop/SingleProductView';
 import NotFound from './pages/NotFound';
 
@@ -93,14 +92,6 @@ function App() {
 									addToCart={addToCart}
 								/>
 							}
-						/>
-						<Route
-							path='checkout'
-							element={<Checkout title='Checkout' />}
-						/>
-						<Route
-							path='checkout'
-							element={<Checkout title='Checkout' />}
 						/>
 						<Route
 							path=':productId'

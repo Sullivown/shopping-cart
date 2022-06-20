@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storefront component testing renders 1`] = `
+<div>
+  <div
+    class="page-content storefront"
+  >
+    <div
+      class="page-title-div"
+    >
+      <h2>
+        Shop
+      </h2>
+      <span
+        data-testid="total-items"
+      >
+        Displaying 
+        3
+         items
+      </span>
+    </div>
+    <div
+      class="product-preview-container"
+      data-testid="product-preview-container"
+    >
+      <section
+        class="product-preview"
+      >
+        <img
+          alt="Product 1"
+          src="[object Object]"
+        />
+        <h3>
+          Product 1
+        </h3>
+        <p>
+          £2.99
+        </p>
+        <button
+          type="button"
+        >
+          View Item
+        </button>
+        <button>
+          Add to Cart
+        </button>
+      </section>
+      <section
+        class="product-preview"
+      >
+        <img
+          alt="Product 2"
+          src="[object Object]"
+        />
+        <h3>
+          Product 2
+        </h3>
+        <p>
+          £10.00
+        </p>
+        <button
+          type="button"
+        >
+          View Item
+        </button>
+        <button>
+          Add to Cart
+        </button>
+      </section>
+      <section
+        class="product-preview"
+      >
+        <img
+          alt="Product 3"
+          src="[object Object]"
+        />
+        <h3>
+          Product 3
+        </h3>
+        <p>
+          £5.99
+        </p>
+        <button
+          type="button"
+        >
+          View Item
+        </button>
+        <button>
+          Add to Cart
+        </button>
+      </section>
+    </div>
+  </div>
+</div>
+`;

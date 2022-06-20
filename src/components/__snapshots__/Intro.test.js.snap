@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Intro component renders 1`] = `
+<div
+  className="home-section light-bg intro"
+>
+  <section
+    className="intro-section"
+  >
+    <img
+      alt="We buy"
+      src="we-buy.png"
+    />
+    <h3>
+      We Buy
+    </h3>
+    <p>
+      We buy your old unwanted adventuring items. Get in touch for a valuation!
+    </p>
+  </section>
+  <section
+    className="intro-section"
+  >
+    <img
+      alt="We sell"
+      src="we-sell.png"
+    />
+    <h3>
+      We Sell
+    </h3>
+    <p>
+      We sell a wide range of adventuring items in our store. Please visit us to view our full range.
+    </p>
+  </section>
+  <section
+    className="intro-section"
+  >
+    <img
+      alt="We trade"
+      src="we-trade.png"
+    />
+    <h3>
+      We Trade
+    </h3>
+    <p>
+      We also trade in unwanted items and treasures for store credit. Typically you will receive 20-30% more than cash value.
+    </p>
+  </section>
+</div>
+`;

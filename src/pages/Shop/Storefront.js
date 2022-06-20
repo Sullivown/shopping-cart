@@ -19,10 +19,17 @@ function Storefront(props) {
 		<div className='page-content storefront'>
 			<div className='page-title-div'>
 				<h2>Shop</h2>
-				<span>Displaying {props.products.length} items</span>
+				<span data-testid='total-items'>
+					Displaying {props.products.length} items
+				</span>
 			</div>
 
-			<div className='product-preview-container'>{productElements}</div>
+			<div
+				className='product-preview-container'
+				data-testid='product-preview-container'
+			>
+				{productElements}
+			</div>
 		</div>
 	);
 }

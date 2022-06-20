@@ -7,9 +7,9 @@ import Header from './Header';
 
 describe('Header component', () => {
 	it('renders header', () => {
-		render(<Header />, { wrapper: MemoryRouter });
+		const { container } = render(<Header />, { wrapper: MemoryRouter });
 
-		expect(screen.getByRole('banner')).toBeInTheDocument();
+		expect(container).toMatchSnapshot();
 	});
 
 	it('renders 5 nav links', () => {

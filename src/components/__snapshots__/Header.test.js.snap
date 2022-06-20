@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders header 1`] = `
+<div>
+  <header>
+    <div
+      class="site-title-div"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="Logo"
+          src="logo.png"
+        />
+      </a>
+      <a
+        href="/"
+      >
+        <h1>
+          AdventureMart
+        </h1>
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li>
+          <a
+            href="/shop"
+          >
+            Shop
+          </a>
+        </li>
+        <li
+          class="cart-container"
+        >
+          <a
+            href="/shop/cart"
+          >
+            <img
+              alt="Shopping cart"
+              class="cart-img"
+              src="cart.png"
+            />
+            <span
+              data-testid="total-basket-items"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;
